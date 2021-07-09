@@ -7,10 +7,12 @@ body:
     attributes:
       value: |
         - Please do your best to search for duplicate issues before filing a new issue so we can keep our issue board clean.
-        - Every issue should have the exact bug and steps to reproduce described in it. Please do not file feedback list tickets as it is difficult to parse them and address their individual points
-        - Have a look at the information under ["I want to file an issue!"][info] for more information.
+        - Have a look at ["I want to file an issue!"][info] for more information.
+        - Read the [Community Participation Guidelines][guidelines] and the [Bugzilla Etiquette guidelines][bugzilla] before filing an issue.
 
-          [info]: https://github.com/mozilla-mobile/fenix#i-want-to-file-an-issue for more information
+        [info]: https://github.com/mozilla-mobile/fenix#i-want-to-file-an-issue
+        [guidelines]: https://www.mozilla.org/en-US/about/governance/policies/participation/
+        [bugzilla]: https://bugzilla.mozilla.org/page.cgi?id=etiquette.html
   - type: textarea
     attributes:
       label: Steps to reproduce
@@ -48,6 +50,7 @@ body:
   - type: input
     attributes:
       label: Android version
+      description: You can find the Android version information the About section of your device's system settings.
       placeholder: Android 10
     validations:
       required: true
@@ -73,6 +76,7 @@ body:
       label: Device logs
       description: |
         Device logs or crash information can greatly aid in debugging. You can find some details here on how to [retrieve device logs or crash IDs][log].
+
         [log]: https://github.com/mozilla-mobile/fenix/wiki/Logging-Crash-Information
     validations:
       required: false
